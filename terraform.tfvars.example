@@ -1,0 +1,18 @@
+environment                  = "prod"
+primary_location             = "eastus"
+secondary_location           = "centralus"
+workload_name                = "enterprise-core"
+hub_vnet_address_space       = ["10.100.0.0/16"]
+spoke_workload_address_space = ["10.101.0.0/16"]
+spoke_shared_address_space   = ["10.102.0.0/16"]
+enable_azure_firewall        = true
+enable_bastion               = true
+
+tags = {
+  Environment         = "Production"
+  Architecture        = "Azure-Cloud-Adoption-Framework"
+  CostCenter          = "Platform-Core"
+  ManagedBy           = "Terraform"
+  SecurityCompliance  = "CIS-Azure-v2.0"
+  DataClassification  = "Confidential"
+}
